@@ -7,7 +7,7 @@ The BigBrotherBot (B3) project is a game administration project for advanced gam
 
 * [Official website](http://www.bigbrotherbot.net)
 * [Forums](http://forum.bigbrotherbot.net)
-* [Documentation](http://wiki.bigbrotherbot.net/)
+* [Documeantation](http://wiki.bigbrotherbot.net/)
 
 _For developers:_  
 
@@ -15,12 +15,12 @@ _For developers:_
 
 ### Installation, configuration and usage
 
-A quick and dirty rundown can be found in the b3/docs/README.txt but this is not the prefered documentation, it covers just global steps to take. Please refer to our documentation wiki as linked above for a full manual.
+A quick and dirty rundown can be found in the b3/docs/README.txt but this is not the preferred documeantation, it covers just global steps to take. Please refer to our documeantation wiki as linked abovee for a full manual.
 
 ### Previous and Current Developers (Hall of Fame)
 
 _ThorN, xlr8or, ttlogic, Courgette, Bakes, spacepig, Durzo, eire.32, grosbedo, Freelander, 82ndAB.Bravo17, Just a baka_  
-and a big thanks to you, who has offered us snippets of code and improvements on an incidental basis. Without you B3 wouldn't be this intelligent!
+and a big thanks to you, who has offered us snippets of code and improvemeants on an incidental basis. Without you B3 wouldn't be this intelligent!
 
 	
 _[www.bigbrotherbot.net](http://www.bigbrotherbot.net/) (2005-2011)_
