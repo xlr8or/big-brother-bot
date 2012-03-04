@@ -18,7 +18,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 # CHANGELOG
-#    04/03/2012 - 1.4.1 - 82mdab.Bravo17
+#    04/03/2012 - 1.4.1 - 82ndab-Bravo17
 #    * Update pbid if empty or 'None' string for cases where pb was inactive at first server visit
 #    28/10/2011 - 1.4.0 - courgette
 #    * Client.save() now raises a EVT_CLIENT_UPDATE event
