@@ -18,7 +18,9 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 # CHANGELOG
-#    28/10/2012 - 1.4.0 - courgette
+#    04/03/2012 - 1.4.1 - 82ndab-Bravo17
+#    * Update pbid if empty or 'None' string for cases where pb was inactive at first server visit
+#    28/10/2011 - 1.4.0 - courgette
 #    * Client.save() now raises a EVT_CLIENT_UPDATE event
 #    16/07/2011 - 1.3.6 - xlr8or
 #    * Client.bot added - ability to identify a bot
@@ -78,7 +80,7 @@ import time
 import traceback
 
 __author__  = 'ThorN'
-__version__ = '1.4.0'
+__version__ = '1.4.1'
 
 
 class ClientVar(object):
@@ -700,6 +702,7 @@ class Client(object):
 
             name = self.name
             ip = self.ip
+            pbid = self.pbid
             try:
                 inStorage = self.console.storage.getClient(self)
             except KeyError, msg:
@@ -714,6 +717,8 @@ class Client(object):
             if inStorage:
                 self.console.bot('Client found in storage %s, welcome back %s', str(self.id), self.name)
                 self.lastVisit = self.timeEdit
+                if self.pbid == 'None' or self.pbid == '':
+                    self.pbid = pbid
             else:
                 self.console.bot('Client not found in the storage %s, create new', str(self.guid))
 
