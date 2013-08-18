@@ -1967,17 +1967,28 @@ class BattlelogPlugin(b3.plugin.Plugin):
         elif event.type == b3.events.EVT_CLIENT_DISCONNECT:
             pass
         elif event.type == b3.events.EVT_GAME_ROUND_START:
-            pass
+            self.clearLogs()
+            self.setupBattlelog()
+            self.setupClientLogs()
         elif event.type == b3.events.EVT_GAME_ROUND_END:
-            pass
+            self.storeIt()
 
-    def clearBattlelog(self):
+    def clearLogs(self):
         self.gameLog = None
         self.clientsLog = None
 
     def setupBattlelog(self):
-        self.gameLog = self.GameStat()
+        self.gameLog = BattleStats()
+        _g = self.console.game
+        self.logStartTime = self.console.time()
+        self.gameLog.startTime = self.logStartTime
+
+    def setupClientLogs(self):
         self.clientsLog = {}
+        clients = self.console.clients.getList()
+
+    def storeIt(self):
+        pass
 
 
 ########################################################################################################################
